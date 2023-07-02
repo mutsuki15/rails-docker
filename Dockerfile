@@ -23,6 +23,7 @@ ADD Gemfile /myapp/Gemfile
 ADD Gemfile.lock /myapp/Gemfile.lock
 RUN gem install bundler
 RUN bundle install
+RUN yarn install
 COPY . /myapp
 
 EXPOSE 3000
