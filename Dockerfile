@@ -23,6 +23,7 @@ ADD Gemfile /myapp/Gemfile
 ADD Gemfile.lock /myapp/Gemfile.lock
 RUN gem install bundler
 RUN bundle install
+ADD package.json yarn.lock /myapp/
 RUN yarn install
 COPY . /myapp
 

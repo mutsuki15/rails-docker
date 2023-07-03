@@ -9,5 +9,4 @@
 - docker-compose run web rake db:create
 - docker-compose exec web bash
 - rails db:migrate
-- rails webpacker:install
 - ブラウザでlocalhost:3000を開く
